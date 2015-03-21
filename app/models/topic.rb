@@ -1,5 +1,4 @@
 class Topic < ActiveRecord::Base
-	def hello
-		"hello"
-	end
+	has_many :votes, dependent: :destroy
+
 end
